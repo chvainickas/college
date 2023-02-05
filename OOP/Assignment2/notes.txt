@@ -1,0 +1,3 @@
+header(.h) files will hold class declations for that program
+memfun(memfun#.cpp) files will hold method declations for that program
+mainproject.cpp wil run all of the code together
