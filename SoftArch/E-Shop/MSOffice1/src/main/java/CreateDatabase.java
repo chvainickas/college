@@ -9,7 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+{{{{}}}}
 /**
  * Servlet implementation class CreateDatabase
  */
@@ -22,7 +22,7 @@ public class CreateDatabase extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CreateDatabase() {
+    public CreateDatabase() {				
         super();
         // TODO Auto-generated constructor stub
     }
@@ -47,7 +47,7 @@ public class CreateDatabase extends HttpServlet {
 			String sql = "CREATE DATABASE IF NOT EXISTS MSOffice1";  //eg 
 			//STEP 5: execute a query
 			statement.executeUpdate(sql);
-			out.println("Database created.....");
+			out.println("Database created.....");	
 			
 		}catch (Exception e){
 			
