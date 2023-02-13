@@ -1,5 +1,5 @@
 /// 12/11/2020  INCORPORATE INTO OOP A2
- #include <iostream>
+#include <iostream>
 #include <iomanip>
 #include <stdlib.h>
 
@@ -49,9 +49,13 @@ float op_bal[4] = {100,200,300,400};
 
 
 
-main(){system("COLOR F3");
-  bank_account account1( account_no[0], op_bal[0] ) ;  bank_account account2( account_no[1],op_bal[1] ) ;
-  bank_account account3( account_no[2], op_bal[2] ) ;  bank_account account4( account_no[3],op_bal[3] ) ;
+main()
+{
+system("COLOR F3");
+  bank_account account1( account_no[0], op_bal[0] ) ;
+  bank_account account2( account_no[1],op_bal[1] ) ;
+  bank_account account3( account_no[2], op_bal[2] ) ;
+  bank_account account4( account_no[3],op_bal[3] ) ;
 
     account1.display_balance() ;
     account2.display_balance() ;
@@ -59,7 +63,8 @@ main(){system("COLOR F3");
     account4.display_balance() ;
 
 
-}
+}
+
 
 
 
