@@ -69,7 +69,7 @@ start2:
     else
     {
         cout << "| invalid user         " << endl;
-        goto start2;
+        goto start;
     }
     cout << "|        Valid User        |" << endl;
     cout << "|__________________________|" << endl;
