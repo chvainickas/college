@@ -12,7 +12,7 @@ private:
     float dm_taxable_P, dm_PAYE, dm_prsi, dm_USC, dm_Union_subs, dm_health_ins, dm_Net_pay, dm_gross, dm_Tax_Credit, dm_net;
     int dm_emp, dm_switch;
 };
-
+ 
 void reporting::print_gross_to_net_report(int employee_number, float gross_pay, float net_pay, int heading_switch)
 {
     dm_switch = heading_switch;
