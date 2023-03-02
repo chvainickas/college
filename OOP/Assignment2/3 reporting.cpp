@@ -75,6 +75,7 @@ int health_insR[4] = {10,23,80,10};
 float netpayR[4] = {500.61,900.73,900.99,1000.43};
 int bank_account_numberR[4] = {80045001, 80045002, 80045003, 80045004};
 int switch_var[4] = {1,2,3,4};
+
 int main()
 {
     /* code */

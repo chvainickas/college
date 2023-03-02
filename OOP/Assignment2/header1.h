@@ -4,7 +4,16 @@ using namespace std ;
 #if !defined HEADER1
 #define HEADER1
 
-/// CLASS DECLARATION
+class validation
+{
+public:
+    bool Valid_user();
+
+private:
+    string dm_Username, dm_password;
+    int c = 0;
+    char let = ' ';
+};
 
 #endif
 
