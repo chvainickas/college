@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <conio.h>
 #include "header1.h"
 using namespace std ;
 
@@ -16,7 +17,6 @@ start:
 
     cout << "You have two attempts to log on" << endl;
 
-start2:
     cout << "________________" << endl;
     cout << "|         Login screen        |" << endl;
     cout << "|" << setw(37) << "|" << endl;
@@ -46,13 +46,12 @@ start2:
 
     if (dm_Username == "User1" && dm_password == "password")
     {
-        cout << "Valid user " << endl;
+        cout << "|        Valid User        |" << endl;
+        cout << "|__________________________|" << endl;
     }
     else
     {
         cout << "| invalid user         " << endl;
         goto start;
     }
-    cout << "|        Valid User        |" << endl;
-    cout << "|__________________________|" << endl;
 }

@@ -16,14 +16,14 @@ float payroll::get_prsi(float taxable_pay)
     dm_prsi = dm_taxable_pay * 0.04;
     return dm_prsi;
 }
-float payroll::get_paye(float taxable_pay)
+float payroll::get_paye(float taxable_pay, float E_SRCOP, float tax_credits)
 {
-    dm_SCROP = E_SCROP;
-    dm_tax_credit = tax_credit;
+    dm_SRCOP = E_SRCOP;
+    dm_tax_credit = tax_credits;
     dm_taxable_pay = taxable_pay;
-    if (dm_taxable_pay > dm_SCROP)
+    if (dm_taxable_pay > dm_SRCOP)
     {
-        dm_paye = ((dm_taxable_pay - dm_SCROP) * 0.4) + 135.77;
+        dm_paye = ((dm_taxable_pay - dm_SRCOP) * 0.4) + 135.77;
     }
     else
     {
@@ -57,8 +57,10 @@ float payroll::get_usc(float taxable_pay)
 float taxable_pay[4] = {778, 1447, 1547, 1600};
 int employee_number[4] = {101, 102, 103, 104};
 float SCROP[4] = {678.85, 678.85, 678.85, 678.85};
-float Wtax_credit[4] = {31.73, 50, 67, 59.80, 65.80};
-int union_subs[4] = {0, 25, 25, 0} int health_ins[4] = {0, 23, 80, 10} float PAYE[4];
+float Wtax_credit[4] = {31.73, 50, 67, 59.80};
+int union_subs[4] = {0, 25, 25, 0};
+int health_ins[4] = {0, 23, 80, 10};
+float PAYE[4];
 float prsi[4];
 float USC[4];
 float net_pay[4];

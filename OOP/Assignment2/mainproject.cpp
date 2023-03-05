@@ -18,7 +18,6 @@ main()
   system("COLOR 74");
   class validation user1;
   user1.Valid_user();
-  return 0;
   /// 2 PAYROLL
   class payroll employee[4];
 
@@ -29,7 +28,7 @@ main()
     prsi[i] = employee[i].get_prsi(taxable_pay[i]);
     net_pay[i] = employee[i].get_net(taxable_pay[i]);
 
-    cout << fixed << setprecision(2) << setw(10) << i + 1 << setw(10) taxable_pay[i] << setw(10) << PAYE[i] << setw(10) << USC[i] << setw(10) << prsi[i] << setw(10) << net_pay[i] << endl;
+    cout << fixed << setprecision(2) << setw(10) << i + 1 << setw(10)<< taxable_pay[i] << setw(10) << PAYE[i] << setw(10) << USC[i] << setw(10) << prsi[i] << setw(10) << net_pay[i] << endl;
   }
   
 

@@ -19,7 +19,7 @@ private:
     float dm_usc;
     float dm_paye;
     float dm_prsi;
-    float dm_SCROP;
+    float dm_SRCOP;
     float dm_tax_credit;
     float dm_net;
 };
