@@ -1,3 +1,4 @@
+/// mainproject.cpp
 #include <iostream>
 #include <iomanip>
 #include "header1.h"
@@ -47,10 +48,17 @@ main()
 
   /// 4 BANK
   system("COLOR F3");
+<<<<<<< Updated upstream
   bank_account account1(account_no[0], netpayR[0]);
   bank_account account2(account_no[1], netpayR[1]);
   bank_account account3(account_no[2], netpayR[2]);
   bank_account account4(account_no[3], netpayR[3]);
+=======
+  bank_account account1(account_no[0], netpay[0]);
+  bank_account account2(account_no[1], netpay[1]);
+  bank_account account3(account_no[2], netpay[2]);
+  bank_account account4(account_no[3], netpay[3]);
+>>>>>>> Stashed changes
 
   account1.display_balance();
   account2.display_balance();
