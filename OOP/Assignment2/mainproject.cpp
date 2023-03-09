@@ -39,26 +39,19 @@ main()
   class reporting report[4];
   for (int i = 0; i < 4; i++)
   {
-    report[i].payslip(employee_numberR[i], taxable_payR[i], PAYEr[i], prsiR[i], USCr[i], union_subsR[i], health_insR[i], weekly_tax_creitR[i], netpayR[i]);
+    report[i].payslip(employee_numberR[i], taxable_payR[i], PAYEr[i], prsiR[i], USCr[i], union_subsR[i], health_insR[i], weekly_tax_creitR[i], net_pay[i]);
   }
   for (int j = 0; j < 4; j++)
   {
-    report[j].print_gross_to_net_report(employee_numberR[j], taxable_payR[j], netpayR[j], switch_var[j]);
+    report[j].print_gross_to_net_report(employee_numberR[j], taxable_payR[j], net_pay[j], switch_var[j]);
   }
 
   /// 4 BANK
   system("COLOR F3");
-<<<<<<< Updated upstream
-  bank_account account1(account_no[0], netpayR[0]);
-  bank_account account2(account_no[1], netpayR[1]);
-  bank_account account3(account_no[2], netpayR[2]);
-  bank_account account4(account_no[3], netpayR[3]);
-=======
-  bank_account account1(account_no[0], netpay[0]);
-  bank_account account2(account_no[1], netpay[1]);
-  bank_account account3(account_no[2], netpay[2]);
-  bank_account account4(account_no[3], netpay[3]);
->>>>>>> Stashed changes
+  bank_account account1(account_no[0], net_pay[0]);
+  bank_account account2(account_no[1], net_pay[1]);
+  bank_account account3(account_no[2], net_pay[2]);
+  bank_account account4(account_no[3], net_pay[3]);
 
   account1.display_balance();
   account2.display_balance();
