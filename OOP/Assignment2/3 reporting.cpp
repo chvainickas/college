@@ -18,7 +18,7 @@ void reporting::print_gross_to_net_report(int employee_number, float gross_pay, 
     dm_switch = heading_switch;
     dm_emp = employee_number;
     dm_gross = gross_pay;
-    dm_net = dm_net;
+    dm_net = net_pay;
 
     if (dm_switch == 1)
     {
@@ -89,7 +89,7 @@ int main()
     }
     for (int j = 0; j < 4; j++)
     {
-        report[j].print_gross_to_net_report(employee_numberR[j], taxable_payR[j], netpayR[j], switch_var[j]);
+        report[j].print_gross_to_net_report(employee_numberR[j], taxable_payR[j], netpay[j], switch_var[j]);
     }
     return 0;
 }

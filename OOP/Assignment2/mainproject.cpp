@@ -47,10 +47,10 @@ main()
 
   /// 4 BANK
   system("COLOR F3");
-  bank_account account1(account_no[0], op_bal[0]);
-  bank_account account2(account_no[1], op_bal[1]);
-  bank_account account3(account_no[2], op_bal[2]);
-  bank_account account4(account_no[3], op_bal[3]);
+  bank_account account1(account_no[0], netpayR[0]);
+  bank_account account2(account_no[1], netpayR[1]);
+  bank_account account3(account_no[2], netpayR[2]);
+  bank_account account4(account_no[3], netpayR[3]);
 
   account1.display_balance();
   account2.display_balance();
