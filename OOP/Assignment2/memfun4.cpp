@@ -2,7 +2,8 @@
 #include <iomanip>
 #include "header4.h"
 using namespace std ;
-
+/// Function declaration for the bank methods
+/// This function is used to print the Gross Pay figure.
 bank_account::bank_account(int acc_no, double initial_balance)
 {
     dm_account_number = acc_no;
@@ -28,4 +29,4 @@ float bank_account::display_balance()
 int bank_account::dm_line_counter = 0; /// give this variable a starting value
 
 int account_no[4] = {80045001, 80045002, 80045003, 80045004};
-float op_bal[4] = {100, 200, 300, 400};
+float op_bal[4] = {100, 200, 300, 400}; /// delete?

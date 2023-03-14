@@ -19,17 +19,26 @@ main()
   system("COLOR 74");
   class validation user1;
   user1.Valid_user();
+
   /// 2 PAYROLL
   class payroll employee[4];
-
   for (int i = 0; i < 4; i++)
+
   {
     PAYE[i] = employee[i].get_paye(taxable_pay[i], SCROP[i], Wtax_credit[i]);
     USC[i] = employee[i].get_usc(taxable_pay[i]);
     prsi[i] = employee[i].get_prsi(taxable_pay[i]);
     net_pay[i] = employee[i].get_net(taxable_pay[i]);
-
-    cout << fixed << setprecision(2) << setw(10) << i + 1 << setw(10)<< taxable_pay[i] << setw(10) << PAYE[i] << setw(10) << USC[i] << setw(10) << prsi[i] << setw(10) << net_pay[i] << endl;
+      if (i == 0) {
+          cout << "_______________________" << endl;
+          cout << "|"
+               << "Gross to Net Report"
+               << "       |" << endl;
+          cout << "_______________________" << endl;
+          cout << "|" << setw(10) << "Emp No" << setw(10) << "Weekly Gross Pay" << setw(10) << "Weekly SCROP"<< setw(10) << "Weekly Tax Credit"<< setw(10) << "UNION SUBS'"<< setw(10) << "VHI"<< setw(10) << "Bank #"
+               << "    |" << endl;
+      }
+    cout << fixed << setprecision(2) << setw(10) << employee_number[i] << setw(10)<< taxable_pay[i] << setw(10) << PAYE[i] << setw(10) << USC[i] << setw(10) << prsi[i] << setw(10) << net_pay[i] << endl;
   }
   
 

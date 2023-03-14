@@ -2,20 +2,22 @@
 #include <iomanip>
 #include "header2.h"
 using namespace std ;
-
+/// Function declaration for the payroll methods
+/// This function is used to get the Net Pay figure.
 float payroll::get_net(float taxable_pay)
 {
     dm_taxable_pay = taxable_pay;
     dm_net = (dm_taxable_pay - (dm_paye + dm_prsi + dm_usc));
     return dm_net;
 }
-
+/// This function is used to get total PRSI figure.
 float payroll::get_prsi(float taxable_pay)
 {
     dm_taxable_pay = taxable_pay;
     dm_prsi = dm_taxable_pay * 0.04;
     return dm_prsi;
 }
+/// This function is used to get total PAYE figure.
 float payroll::get_paye(float taxable_pay, float E_SRCOP, float tax_credits)
 {
     dm_SRCOP = E_SRCOP;
@@ -32,7 +34,7 @@ float payroll::get_paye(float taxable_pay, float E_SRCOP, float tax_credits)
     dm_paye = dm_paye - dm_tax_credit;
     return dm_paye;
 }
-
+/// This function is used to get total USC figure.
 float payroll::get_usc(float taxable_pay)
 {
     dm_taxable_pay = taxable_pay;

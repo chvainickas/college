@@ -66,6 +66,10 @@ start2:
     {
         cout << "Valid user " << endl;
     }
+    if (dm_Username == "User2" && dm_password == "password")
+    {
+        cout << "Valid user " << endl;
+    }
     else
     {
         cout << "| invalid user         " << endl;
