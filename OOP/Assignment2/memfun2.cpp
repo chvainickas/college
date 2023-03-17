@@ -40,28 +40,28 @@ float payroll::get_usc(float taxable_pay)
     dm_taxable_pay = taxable_pay;
     if (dm_taxable_pay <= 231)
     {
-        dm_usc = dm_taxable_pay * .0005;
+        dm_usc = dm_taxable_pay * 0.005;
     }
     else if (dm_taxable_pay > 231 && dm_taxable_pay <= 382)
     {
-        dm_usc = ((dm_taxable_pay - 231) * .02) + (1.15);
+        dm_usc = ((dm_taxable_pay - 231) * .02) + (1.155);
     }
     else if (dm_taxable_pay > 382 && dm_taxable_pay <= 1347)
     {
-        dm_usc = ((dm_taxable_pay - 382) * .045) + (1.15 + 3.02);
+        dm_usc = ((dm_taxable_pay - 382) * .045) + (1.155 + 3.02);
     }
     else
     {
-        dm_usc = ((dm_taxable_pay - 1337) * .08) + (1.15 + 3.02 + 43.425);
+        dm_usc = ((dm_taxable_pay - 1337) * .08) + (1.155 + 3.02 + 43.425);
     }
     return dm_usc;
 }
-float taxable_pay[4] = {778, 1447, 1547, 1600};
+float taxable_pay[4] = {778.85, 1447, 1547, 1600};
 int employee_number[4] = {101, 102, 103, 104};
 float SCROP[4] = {678.85, 678.85, 678.85, 678.85};
-float Wtax_credit[4] = {31.73, 50, 67, 59.80};
+float Wtax_credit[4] = {31.73, 50.67, 59.8, 65.80};
 int union_subs[4] = {0, 25, 25, 0};
-int health_ins[4] = {0, 23, 80, 10};
+int VHI[4] = {0, 23, 80, 10};
 float PAYE[4];
 float prsi[4];
 float USC[4];

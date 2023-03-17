@@ -22,24 +22,39 @@ main()
 
   /// 2 PAYROLL
   class payroll employee[4];
-  for (int i = 0; i < 4; i++)
+  /// FIRST TABLE (DONE)
+//  for (int i = 0; i < 4; i++)
+//
+//  {
+//    PAYE[i] = employee[i].get_paye(taxable_pay[i], SCROP[i], Wtax_credit[i]);
+//    USC[i] = employee[i].get_usc(taxable_pay[i]);
+//    prsi[i] = employee[i].get_prsi(taxable_pay[i]);
+//    net_pay[i] = employee[i].get_net(taxable_pay[i]);
+//      if (i == 0) {
+//          cout << "_________________________________________________________________________________________________________" << endl;
+//          cout << "|" << setw(10) << "Emp No " << "|" <<setw(15) << " Weekly Gross Pay " <<"|" << setw(13) << " Weekly SCROP "<<"|" << setw(16) << " Weekly Tax Credit "<<"|" << setw(10) << " UNION SUBS' "<<"|" << setw(10) << " VHI   "<<"|" << setw(11) << " Bank Number"<<" |" << endl;
+//          cout << "_________________________________________________________________________________________________________" << endl;
+//      }
+//    cout<< "|" << fixed << setprecision(2) << setw(6) << employee_number[i] << "    |"<< setw(12)<< taxable_pay[i] << setw(7)<<" |" << setw(10) << SCROP[i] << setw(5)<<"|"<< setw(12) << Wtax_credit[i] <<setw(8) <<"|"<< setw(7) << union_subs[i]<< setw(7) <<" |"<< setw(6) << VHI[i] << setw(5)<<"  |"<< setw(10) << account_no[i] << "   |"<< endl;
+//  }
+//    cout << "_________________________________________________________________________________________________________" << endl;
 
-  {
-    PAYE[i] = employee[i].get_paye(taxable_pay[i], SCROP[i], Wtax_credit[i]);
-    USC[i] = employee[i].get_usc(taxable_pay[i]);
-    prsi[i] = employee[i].get_prsi(taxable_pay[i]);
-    net_pay[i] = employee[i].get_net(taxable_pay[i]);
-      if (i == 0) {
-          cout << "_______________________" << endl;
-          cout << "|"
-               << "Gross to Net Report"
-               << "       |" << endl;
-          cout << "_______________________" << endl;
-          cout << "|" << setw(10) << "Emp No " << "|" <<setw(15) << " Weekly Gross Pay " <<"|" << setw(13) << " Weekly SCROP "<<"|" << setw(16) << " Weekly Tax Credit "<<"|" << setw(10) << " UNION SUBS' "<<"|" << setw(10) << " VHI   "<<"|" << setw(11) << " Bank Number"<<" |" << endl;
-      }
-    cout << fixed << setprecision(2) << setw(8) << employee_number[i] << setw(17)<< taxable_pay[i] << setw(16) << PAYE[i] << setw(18) << USC[i] << setw(16) << prsi[i] << setw(13) << net_pay[i] << setw(13) << account_no[i] << endl;
-  }
-  
+/// SECOND TABLE (TO-DO)
+/// NOTE: Second Table Keeps printing wrong figures.memfun2 formulas have different output
+///
+    for (int i = 0; i < 4; i++)
+    {
+        PAYE[i] = employee[i].get_paye(taxable_pay[i], SCROP[i], Wtax_credit[i]);
+        USC[i] = employee[i].get_usc(taxable_pay[i]);
+        prsi[i] = employee[i].get_prsi(taxable_pay[i]);
+        net_pay[i] = employee[i].get_net(taxable_pay[i]);
+        if (i == 0) {
+            cout << "____________________________________________________________________________________________________________________" << endl;
+            cout << "| " << setw(10) << "Weekly taxable gross " << "|" <<setw(15) << " Bal>SRCOP taxed @40% PAYE " <<"|" << setw(13) << " PAYE-Tax Credit "<<"|" << setw(7) << " PRSI EE "<<"|" << setw(5) << "  USC* "<<"|" << setw(10) << " Total deductions*"<<"|" << setw(5) << " Net Pay*"<<" |" << endl;
+            cout << "____________________________________________________________________________________________________________________" << endl;
+        }
+    cout<< "|" << fixed << setprecision(2) << setw(15) << taxable_pay[i] << setw(8)<< "|"<< setw(17)<< taxable_pay[i] - SCROP[i] << setw(11)<<"|" << setw(12) << PAYE[i] << setw(6)<<"|"<< setw(7) << prsi[i] <<setw(4) <<"| " << USC[i]<<" |"<< setw(13) << PAYE[i]+prsi[i]+USC[i]+union_subs[i]+VHI[i] << setw(6)<<"|"<< setw(8) << taxable_pay[i]-((PAYE[i])+prsi[i]+USCr[i]+ union_subs[i] + VHI[i])<< setw(2) << "|"<< endl;    }
+    cout << "____________________________________________________________________________________________________________________" << endl;
 
   /// 3 REPORT
 //  system("COLOR F3");
