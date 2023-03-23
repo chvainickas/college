@@ -1,56 +1,217 @@
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
   <title>Small Business</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Custom CSS -->
   <link href="style.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/collection.js"></script>
-  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <!--[if IE 6]>
-<script src="js/belatedPNG.js"></script>
-<script>DD_belatedPNG.fix('*');</script>
-<![endif]-->
+  <style>
+    /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+    
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+    
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+    
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+    
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+    
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+    
+            to {
+                opacity: 1
+            }
+        }
+    
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+        .progress-container {
+              position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+  </style>
 </head>
 
 <body>
   <!-- START PAGE SOURCE -->
+                      <div class="progress-container">
+                        <div class="progress-bar" id="myBar"></div>
+                      </div>
   <div id="wrap">
-    <nav id="mainnav">
-      <h1 id="textlogo">MSOffice <span>Licence</span> </h1>
-      <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="login.html"><span class="login">Login</span></a></li>
-      </ul> 
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <h1 id="textlogo">MSOffice <span>Licence</span> </h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="MSOfficeInfo.html">Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <section id="content">
-      <header id="homeheader">
-        <center><h1>Welcome to Edward Software Shop!</h1></center>
+                      <div class="container">
+                        <div class="slideshow-container">
+                      
+                          <div class="mySlides fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="images\365.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="images\excel.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides fade">
+                            <div class="numbertext">3 /4</div>
+                            <img src="images\pp.jpg" style="width:100%">
+                          </div>
+                            <div class="mySlides fade">
+                              <div class="numbertext">4 / 4</div>
+                              <img src="images\word.jpg" style="width:100%">
 
-        <p></p>
-        <a href="login.html"> <input class="orgbtn" role="button" type="submit" value="LOGIN"></a>
-        <p></p>
+                            </div>
+                          <br>
+                      
+                          <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                          </div>
+                          <div class="container">
+      <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Heading-->
+        <h1 class="hero-heading">Buy MSOffice Licences Today!</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+              data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+              data-fa-i2svg="">
+              <path fill="currentColor"
+                d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z">
+              </path>
+            </svg><!-- <i class="fas fa-star"></i> Font Awesome fontawesome.com --></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="hero-text">Get genuine MSOffice licences at affordable prices for your personal or business use.</p><p><a href="MSOfficeInfo.html" class="btn btn-primary">Learn More</a>  <a href="products.html" class="btn btn-primary">Shop Now</a></p>
+        
+      </div></div>
+    </section></div>
+        <footer>
+          <div id="bottom"> <a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a
+              href="MSOfficeInfo.html">Products</a> | <a href="#">Services</a>
+            <div class="clear"></div>
+          </div>
+        
+        </footer>
+    <!-- END PAGE SOURCE -->
 
-        <p>
-        </p>
-        <p><a href="registration.html"><input class="orgbtn" role="button" type="submit" value="Register"></a>
-        </p>
-      </header>
+<script>
+  let slideIndex = 0;
+  showSlides();
 
-    </section>
-  </div>
-  <footer>
-    <div id="bottom">
-      <a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="MSOfficeInfo.html">Products</a> | <a href="#">Services</a>
-      <div class="clear"></div>
-    </div>
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  // When the user scrolls the page, execute myFunction 
+  window.onscroll = function () { myFunction() };
 
-  </footer>
-  <!-- END PAGE SOURCE -->
-
-
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+</script>
 </body>
 
 </html>

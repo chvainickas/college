@@ -39,6 +39,9 @@ h1, h2, h3 {
 h4, h5 {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 }
+section{
+	margin-top: 10px;
+}
 nav, section, header, footer, article {
 	display:block;
 }
@@ -176,11 +179,10 @@ footer {
 	padding:55px 80px 0 0;
 }
 #bottom {
-	position: bottom;
-	width:960px;
-	margin:auto;
-	padding:30px 0;
-	text-align:center;
+	bottom: 0;
+	width: 100%;
+	padding: 30px 0;
+	text-align: center;
 }
 #credits {
 	background:#2d2724;
@@ -241,4 +243,22 @@ footer a, #bottom a, #credits a {
 .login{
 	font-size: 20px;
 	color: #d35537;
+}
+#textlogo{
+	font-size: 20px;
+	color: #F15524;
+		transition: font-size 1s, color 1s;
+}
+#textlogo:hover {
+	font-size: 24px;
+	color: #F15524;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #73CFE6;
+}
+#nav-item active{
+	color: #F15524 !important;
+}
+.download{
+	color: #F15524;
 }
