@@ -5,17 +5,18 @@
     <title>MSOffice 365 Subscriptions</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <meta name="description" content="This is a website that sells Microsoft Office Licence Keys with 1-month subscription,3-month subscription,6-month subscription,12-month subscription at great prices!">
+    <meta name="description"
+        content="This is a website that sells Microsoft Office Licence Keys with 1-month subscription,3-month subscription,6-month subscription,12-month subscription at great prices!">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <!-- START PAGE SOURCE -->
-        <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <div id="wrap">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="index.html">
@@ -38,90 +39,95 @@
                     <li class="nav-item">
                         <a class="nav-link" href="MSOfficeInfo.html">About 365</a>
                     </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="about.html">About Us</a>
-                                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
                 </ul>
             </div>
         </nav>
-        
+
         <section id="content">
-            <div class="container-fluid"><div class="website-counter"></div></div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3 col-sm-6">
-            <div class="card">
-                <img src="images/365logo.png" class="card-img-top" alt="Product 3">
-                <div class="card-body">
-                    <h5 class="card-title">1 Month</h5>
-                    <p class="card-text">1 Month Microsoft&#169; Office 365 subscription.</p>
-                    <a href="#" class="btn btn-primary">Buy Now</a>
+            <div class="container-fluid">
+                <div class="website-counter"></div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/365logo.png" class="card-img-top" alt="Product 3">
+                            <div class="card-body">
+                                <h5 class="card-title">1 Month</h5>
+                                <p class="card-text">1 Month Microsoft&#169; Office 365 subscription.</p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/365logo.png" class="card-img-top" alt="Product 3">
+                            <div class="card-body">
+                                <h5 class="card-title">3 Months</h5>
+                                <p class="card-text">3 Month Microsoft&#169; Office 365 subscription.</p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/365logo.png" class="card-img-top" alt="Product 3">
+                            <div class="card-body">
+                                <h5 class="card-title">6 Months</h5>
+                                <p class="card-text">6 Month Microsoft&#169; Office 365 subscription.</p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img src="images/365logo.png" class="card-img-top" alt="Product 3">
+                            <div class="card-body">
+                                <h5 class="card-title">12 Months</h5>
+                                <p class="card-text">12 Month Microsoft&#169; Office 365 subscription.</p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="card">
-                <img src="images/365logo.png" class="card-img-top" alt="Product 3">
-                <div class="card-body">
-                    <h5 class="card-title">3 Months</h5>
-                    <p class="card-text">3 Month Microsoft&#169; Office 365 subscription.</p>
-                    <a href="#" class="btn btn-primary">Buy Now</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="card">
-                <img src="images/365logo.png" class="card-img-top" alt="Product 3">
-                <div class="card-body">
-                    <h5 class="card-title">6 Months</h5>
-                    <p class="card-text">6 Month Microsoft&#169; Office 365 subscription.</p>
-                    <a href="#" class="btn btn-primary">Buy Now</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="card">
-                <img src="images/365logo.png" class="card-img-top" alt="Product 3">
-                <div class="card-body">
-                    <h5 class="card-title">12 Months</h5>
-                    <p class="card-text">12 Month Microsoft&#169; Office 365 subscription.</p>
-                    <a href="#" class="btn btn-primary">Buy Now</a>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
-</div></section></div>
 
-<script>
-    var counterContainer = document.querySelector(".website-counter");
-    var resetButton = document.querySelector("#reset");
-    var visitCount = localStorage.getItem("page_view");
+    <script>
+        var counterContainer = document.querySelector(".website-counter");
+        var resetButton = document.querySelector("#reset");
+        var visitCount = localStorage.getItem("page_view");
 
-    // Check if page_view entry is present
-    if (visitCount) {
-        visitCount = Number(visitCount) + 1;
-        localStorage.setItem("page_view", visitCount);
-    } else {
-        visitCount = 1;
-        localStorage.setItem("page_view", 1);
-    }
+        // Check if page_view entry is present
+        if (visitCount) {
+            visitCount = Number(visitCount) + 1;
+            localStorage.setItem("page_view", visitCount);
+        } else {
+            visitCount = 1;
+            localStorage.setItem("page_view", 1);
+        }
 
-    // Display the message based on the visit count
-    var message;
-    if (visitCount === 1) {
-        message = "You are the first shopper!";
-    } else {
-        message = "You are the " + visitCount + "th shopper!";
-    }
-    counterContainer.innerHTML = message;
+        // Display the message based on the visit count
+        var message;
+        if (visitCount === 1) {
+            message = "You are the first shopper!";
+        } else {
+            message = "You are the " + visitCount + "th shopper!";
+        }
+        counterContainer.innerHTML = message;
 
-    // Adding onClick event listener
-    resetButton.addEventListener("click", () => {
-        visitCount = 1;
-        localStorage.setItem("page_view", 1);
-        counterContainer.innerHTML = "You are the first shopper!";
-    });
-</script>
+        // Adding onClick event listener
+        resetButton.addEventListener("click", () => {
+            visitCount = 1;
+            localStorage.setItem("page_view", 1);
+            counterContainer.innerHTML = "You are the first shopper!";
+        });
+    </script>
 
 </body>
+
 </html>
