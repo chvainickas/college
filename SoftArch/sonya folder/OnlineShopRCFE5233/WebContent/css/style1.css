@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Hoefler';
+    src:  url('../font/Hoefler-Text.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UltraLineTwo';
+    src:  url('../font/UltraSystemSansLineTwo.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'UltraItalic';
+    src:  url('../font/UltraSystemSansItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MontBlack';
+    src:  url('../font/Mont-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MontLight';
+    src:  url('../font/Mont-Light.otf') format('opentype');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hoefler {
+    font-family: Hoefler, serif;
+}
+
+.ultralinetwo {
+    font-family: UltraLineTwo, serif;
+}
+
+
+.ultraitalic {
+    font-family: UltraItalic, serif;
+}
+
+.montblack {
+    font-family: MontBlack, serif;
+}
+
+.montlight {
+    font-family: MontLight, serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.weight-700 {
+    font-weight: 900;
+}
+
+.ProductSans {
+    font-family: "Product Sans", serif;
+}
+
+.bg-black, .navbar-black {
+    background-color: #101010 !important;
+}
+
+.navbar-nav > li{
+    margin-left:45px;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+}
+
+.navbar {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.welcome {
+    padding-top: 30vh;
+    height: 100vh;
+    background: url("../img/welcome2.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 0;
+}
+
+.underline-yellow {
+    text-decoration: underline;
+    text-decoration-color: #ffc048 !important;
+}
+
+.welcome .container {
+    vertical-align: middle;
+}
+
+.login {
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    background: #101010;
+    height: 50vh;
+    margin: auto;
+}
+
+.product {
+	height: auto;
+	width: 150px;	
+	transition: all ease 0.3s;
+}
+
+.product:hover {
+	transform: scale(2.5);
+}
+
+nav .dropdown-menu  > a:hover, nav .dropdown-menu > a:focus {
+    background-image:none !important;
+}
+nav .dropdown-menu  > a:hover, nav .dropdown-menu  > a:focus {
+    background-color: rgba(255,255,255,0.05);
+}
+
+bg-background {
+	background: url("../img/background.jpg");
+	background-size: cover;
+}
+
+@media (max-width: 576px) {
+    form[action="LoginServlet"] input[type="text"],
+    form[action="LoginServlet"] input[type="password"] {
+        width: 100%;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+
+    .welcome {
+        margin: auto;
+        padding: 0;
+    }
+
+    .welcome .container .col {
+        transform: translateY(25vh);
+    }
+
+    .login {
+        background: #2c2f33;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .login form {
+        transform: translateY(50%);
+    }
+}
+
+@media (min-width: 992px){
+    .dropdown-menu {display: block;visibility: hidden;opacity:0;transform: translateY(50px);transition:.3s ease all;}
+    .dropdown-menu.show {display: block;visibility: visible;opacity:1;transform: translateY(0px);transition:.3s ease all;}
+}
+
+@media (max-width: 992px){
+    .dropdown-menu {
+        opacity: 0;
+        transition: all ease 0.3s;
+    }
+
+    .dropdown-menu.show {
+        opacity: 1;
+        transition: all ease 0.3s;
+    }
+}
